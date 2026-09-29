@@ -9,11 +9,11 @@ SELECT flight_id, route_no, status
 FROM flights 
 WHERE status = 'On Time';
 
--- 2. Reservas con un total mayor a 100.000 rublos 
+-- 2. Reservas con un total mayor a 1.000.000 rublos 
 
 SELECT * 
 FROM bookings 
-WHERE total_amount > 100000;
+WHERE total_amount > 1000000;
 
 -- 3. Modelos de aviones disponibles
 
@@ -34,7 +34,7 @@ WHERE r.airplane_code = '7M7';
 
 SELECT * 
 FROM tickets 
-WHERE passenger_name LIKE 'Irina%';
+WHERE passenger_name ILIKE 'irina%';
 
 -- 6. Mostrar las ciudades con más de un aeropuerto.
 
